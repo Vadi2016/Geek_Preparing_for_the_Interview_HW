@@ -1,4 +1,4 @@
-
+// To describe the mistakes in the code
 
 interface Moveable{
     void start();
