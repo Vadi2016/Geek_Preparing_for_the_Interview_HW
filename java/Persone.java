@@ -1,4 +1,4 @@
-public class Persone {
+class Persone {
 
     private String firstName;
     private String lastName;
@@ -9,49 +9,49 @@ public class Persone {
     private int age;
     private String gender;
 
-    static class Builder {
+    static class BuilderPerson {
         private Persone persone;
 
-        Builder() {
+        BuilderPerson() {
             persone = new Persone();
         }
 
-        Builder firstName(String firstName) {
+        BuilderPerson firstName(String firstName) {
             persone.firstName = firstName;
             return this;
         }
 
-        Builder lastName(String lastName) {
+        BuilderPerson lastName(String lastName) {
             persone.lastName = lastName;
             return this;
         }
 
-        Builder middleName(String middleName) {
+        BuilderPerson middleName(String middleName) {
             persone.middleName = middleName;
             return this;
         }
 
-        Builder country(String country) {
+        BuilderPerson country(String country) {
             persone.country = country;
             return this;
         }
 
-        Builder address(String address) {
+        BuilderPerson address(String address) {
             persone.address = address;
             return this;
         }
 
-        Builder phone(String phone) {
+        BuilderPerson phone(String phone) {
             persone.phone = phone;
             return this;
         }
 
-        Builder age(int age) {
+        BuilderPerson age(int age) {
             persone.age = age;
             return this;
         }
 
-        Builder gender(String gender) {
+        BuilderPerson gender(String gender) {
             persone.gender = gender;
             return this;
         }
