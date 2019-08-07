@@ -2,16 +2,16 @@ package com.figure;
 
 public class Square implements IFigure {
 
-    int x;
-    int y;
+    int x1;
+    int y1;
 
     @Override
-    public void draw(int x, int y) {
+    public void draw(int x1, int y1) {
         System.out.println("Drawing square");
     }
 
     @Override
-    public void erase(int x, int y) {
+    public void erase(int x1, int y1) {
         System.out.println("Erasing square");
     }
 }
