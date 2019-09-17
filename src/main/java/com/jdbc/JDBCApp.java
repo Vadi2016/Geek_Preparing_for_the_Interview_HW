@@ -11,7 +11,17 @@ public class JDBCApp {
 
     public static void connect() throws ClassNotFoundException, SQLException {
         Class.forName("org.postgresql.Driver");
-        con = DriverManager.getConnection("");
+        con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/kinotheater", "postgres", "920007");
         stmt = con.createStatement();
+    }
+
+    public static void main(String[] args) {
+        try {
+            connect();
+        } catch (SQLException e) {
+
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 }
