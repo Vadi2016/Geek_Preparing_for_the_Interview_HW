@@ -1,4 +1,4 @@
-package pingPongGame;
+package com.pingPongGame;
 
 import java.util.concurrent.locks.ReentrantLock;
 

@@ -1,4 +1,4 @@
-package pingPongGame;
+package com.pingPongGame;
 
 public class Ball {
     private int kicks = 0;
