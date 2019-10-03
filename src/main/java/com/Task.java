@@ -1,4 +1,4 @@
-// To describe the mistakes in the code
+package com;// To describe the mistakes in the code
 
 interface Moveable{
     void start();
@@ -16,7 +16,7 @@ abstract class Car implements Moveable, Stopable {
 
 
     public void start(){
-        System.out.println("Car starting");
+        System.out.println("com.Car starting");
     }
 
     abstract void open();
@@ -48,30 +48,30 @@ abstract class Car implements Moveable, Stopable {
 
 class LightWeightCar extends Car {
 
-    @Override
+
     void open() {
-        System.out.println("Car is open");
+        System.out.println("com.Car is open");
     }
 
-    @Override
+
     public void move() {
-        System.out.println("Car is moving");
+        System.out.println("com.Car is moving");
     }
 
-    @Override
+
     public void stop() {
 
     }
 }
 
-//class Lorry extends Car, Moveable, Stopable{ // Multiple inheritance
+//class com.Lorry extends com.Car, com.Moveable, com.Stopable{ // Multiple inheritance
 //
 //    public void move(){
-//        System.out.println("Car is moving");
+//        System.out.println("com.Car is moving");
 //    }
 //
 //    public void stop(){
-//        System.out.println("Car is stop");
+//        System.out.println("com.Car is stop");
 //    }
 //}
 
@@ -79,14 +79,14 @@ class Lorry extends Car { // Multiple inheritance
 
     @Override
     void open() {
-        System.out.println("Car is open");
+        System.out.println("com.Car is open");
     }
 
     public void move(){
-        System.out.println("Car is moving");
+        System.out.println("com.Car is moving");
     }
 
     public void stop(){
-        System.out.println("Car is stop");
+        System.out.println("com.Car is stop");
     }
 }
