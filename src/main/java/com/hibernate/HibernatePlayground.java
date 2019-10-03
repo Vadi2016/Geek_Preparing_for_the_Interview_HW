@@ -11,17 +11,19 @@ public class HibernatePlayground {
 
     final String lexicon = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-    final java.util.Random rand = new java.util.Random();
+    private final static java.util.Random rand = new java.util.Random();
 
     public static void main(String[] args) {
 
         StudentDAO studentDAO = new StudentDAO();
-        StringBuilder builder = new StringBuilder();
-        for (int i = 0; i <= 1000; i++) {
-            while(builder.toString().length() == 0) {
 
-            }
-//            studentDAO.createNewStudent();
+        for (int i = 0; i <= 1000; i++) {
+            Student student = new Student("Ivan" + i, rand.nextInt((5 - 1) + 1) + 1);
+            studentDAO.createNewStudent(student);
         }
+
+
     }
+
+
 }
