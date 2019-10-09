@@ -1,3 +1,5 @@
+package com;
+
 class Persone {
 
     private String firstName;
